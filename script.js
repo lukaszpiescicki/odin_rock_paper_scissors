@@ -29,8 +29,8 @@ function game(){
     let computerScore = 0;
 
     for(let i = 0; i<5; i++){
-        let playerSelection = prompt('Choose rock, paper or scissors');
-        let computerSelection = getComputerChoice();
+        const playerSelection = prompt('Choose rock, paper or scissors');
+        const computerSelection = getComputerChoice();
         let result = singleRound(playerSelection, computerSelection)
         console.log(result)
         if(result === `You won! Computer played ${computerSelection}`){
