@@ -14,7 +14,11 @@ function singleRound(playerSelection, computerSelection){
     }
     else if(playerSelection === computerSelection){
         console.log("It's a draw!");
-    }else{
+    }
+    else if(playerSelection !== 'rock' || playerSelection !== 'paper' || playerSelection !== 'scissors'){
+        console.log("Wrong word! Choose rock, paper or scissors")
+    }
+    else{
         console.log("You lose!");
     }
 
